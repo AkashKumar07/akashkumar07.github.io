@@ -37,3 +37,12 @@ gsap.from(".square-anim", {
   duration: 1,
   ease: Back.easeOut.config(1.7),
 });
+
+gsap.from(".stagger2", {
+  scrollTrigger: ".skills__display-container",
+  opacity: 0,
+  x: 100,
+  stagger: 0.1,
+  ease: Power4.easeOut,
+  duration: 1.2,
+});

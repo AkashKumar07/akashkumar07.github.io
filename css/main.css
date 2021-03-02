@@ -1,8 +1,15 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap");
+* {
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
 body {
   height: 100vh;
   margin: 0;
   font-family: "Poppins", sans-serif;
+  overflow-x: hidden;
 }
 
 ul {
@@ -78,14 +85,17 @@ header nav ul li a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin: 0 auto;
   width: 200px;
   font-weight: 700;
   color: #ff64cb;
+  margin-top: 1em;
 }
 
 .meet span {
-  margin-top: 1em;
   margin-right: 0.5em;
 }
 
@@ -212,5 +222,81 @@ header nav ul li a {
     -webkit-transform: translate(262px, 830px);
             transform: translate(262px, 830px);
   }
+}
+
+.skills {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.skills__main {
+  width: 100%;
+  max-width: 1000px;
+  padding: 100px 0;
+}
+
+.skills__main h2 {
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.skills__display {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.skills__display-container {
+  width: 120px;
+  height: 120px;
+  margin: 20px 30px;
+  padding: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  border-radius: 3px;
+}
+
+.skills__display-container img {
+  width: 100%;
+  -webkit-filter: grayscale(1);
+          filter: grayscale(1);
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.skills__display-container:hover {
+  -webkit-box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+          box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+}
+
+.skills__display-container:hover img {
+  -webkit-filter: none;
+          filter: none;
 }
 /*# sourceMappingURL=main.css.map */

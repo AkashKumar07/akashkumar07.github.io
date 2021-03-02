@@ -50,13 +50,14 @@ header {
 
 .meet {
   display: flex;
+  align-items: center;
   margin: 0 auto;
   width: 200px;
   font-weight: 700;
   color: #ff64cb;
+  margin-top: 1em;
 
   span {
-    margin-top: 1em;
     margin-right: 0.5em;
   }
 }
