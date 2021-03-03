@@ -39,7 +39,10 @@ gsap.from(".square-anim", {
 });
 
 gsap.from(".stagger2", {
-  scrollTrigger: ".skills__display-container",
+  scrollTrigger: {
+    trigger: ".skills__display-container",
+    toggleActions: "restart pause reverse pause",
+  },
   opacity: 0,
   x: 100,
   stagger: 0.2,
@@ -48,17 +51,26 @@ gsap.from(".stagger2", {
 });
 
 gsap.from(".aboutMe__display-image", {
-  scrollTrigger: ".aboutMe__main",
+  scrollTrigger: {
+    trigger: ".aboutMe__Main",
+    pin: true,
+    scrub: 1,
+  },
   opacity: 0,
-  x: -100,
+  x: -200,
   ease: Power4.easeOut,
+  pin: true,
   duration: 2,
 });
 
 gsap.from(".aboutMe__display-description", {
-  scrollTrigger: ".aboutMe__main",
+  scrollTrigger: {
+    trigger: ".aboutMe__Main",
+    pin: true,
+    scrub: 1,
+  },
   opacity: 0,
-  x: 100,
+  x: 200,
   ease: Power4.easeOut,
   duration: 2,
 });
