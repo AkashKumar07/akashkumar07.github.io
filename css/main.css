@@ -1,8 +1,13 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap");
 * {
   margin: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {
@@ -222,6 +227,103 @@ header nav ul li a {
     -webkit-transform: translate(262px, 830px);
             transform: translate(262px, 830px);
   }
+}
+
+.aboutMe {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 32px;
+}
+
+.aboutMe__main {
+  width: 100%;
+  max-width: 1000px;
+  padding: 70px 0;
+}
+
+.aboutMe__main h2 {
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.aboutMe__display {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.aboutMe__display-image {
+  width: 200px;
+  height: 300px;
+  border-radius: 3px;
+  overflow: hidden;
+  margin: 0 10px;
+}
+
+.aboutMe__display-image img {
+  width: 100%;
+  border-radius: 3px;
+}
+
+.aboutMe__display-description {
+  width: 100%;
+  max-width: 700px;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  margin-top: 20px;
+}
+
+.aboutMe__display-description p {
+  font-size: 15px;
+  color: #616161;
+}
+
+.aboutMe__display-description p span {
+  font-weight: 600;
+  color: #000;
+}
+
+@media only screen and (max-width: 1000px) {
+  .aboutMe__display-description {
+    text-align: center;
+  }
+}
+
+.downloadCv {
+  display: inline-block;
+  background: #fff;
+  padding: 10px 20px;
+  border-radius: 3px;
+  margin-top: 20px;
+  color: #6e00ff;
+  font-size: 14px;
+  border: 1px solid #6e00ff;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  outline: none;
+}
+
+.downloadCv:hover {
+  color: #fff;
+  background: #6e00ff;
 }
 
 .skills {

@@ -42,7 +42,23 @@ gsap.from(".stagger2", {
   scrollTrigger: ".skills__display-container",
   opacity: 0,
   x: 100,
-  stagger: 0.1,
+  stagger: 0.2,
   ease: Power4.easeOut,
-  duration: 1.2,
+  duration: 2,
+});
+
+gsap.from(".aboutMe__display-image", {
+  scrollTrigger: ".aboutMe__main",
+  opacity: 0,
+  x: -100,
+  ease: Power4.easeOut,
+  duration: 2,
+});
+
+gsap.from(".aboutMe__display-description", {
+  scrollTrigger: ".aboutMe__main",
+  opacity: 0,
+  x: 100,
+  ease: Power4.easeOut,
+  duration: 2,
 });
