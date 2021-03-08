@@ -41,7 +41,7 @@ gsap.from(".square-anim", {
 gsap.from(".stagger2", {
   scrollTrigger: {
     trigger: ".skills__display-container",
-    toggleActions: "restart pause reverse pause",
+    toggleActions: "restart none none none",
   },
   opacity: 0,
   x: 100,
@@ -53,24 +53,21 @@ gsap.from(".stagger2", {
 gsap.from(".aboutMe__display-image", {
   scrollTrigger: {
     trigger: ".aboutMe__Main",
-    pin: true,
-    scrub: 1,
+    toggleActions: "restart none none none",
   },
   opacity: 0,
-  x: -200,
+  x: -100,
   ease: Power4.easeOut,
-  pin: true,
-  duration: 2,
+  duration: 1,
 });
 
 gsap.from(".aboutMe__display-description", {
   scrollTrigger: {
     trigger: ".aboutMe__Main",
-    pin: true,
-    scrub: 1,
+    toggleActions: "restart none none none",
   },
   opacity: 0,
-  x: 200,
+  x: 100,
   ease: Power4.easeOut,
-  duration: 2,
+  duration: 1,
 });
