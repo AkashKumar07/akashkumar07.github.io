@@ -110,25 +110,6 @@ header nav ul li a {
 }
 
 @media screen and (min-width: 1050px) {
-  .hero {
-    height: 90vh;
-  }
-  .nav-container {
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: 66% auto;
-        grid-template-columns: 66% auto;
-    background: unset;
-  }
-  .nav-container header {
-    background: #6700ee;
-  }
-  .nav-container header nav ul li a {
-    font-size: 14px;
-  }
-  header {
-    padding: 1.3em 2em 1.3em 4em;
-  }
   .social-header {
     padding: 1.3em 4em 1.3em 0;
   }
@@ -150,6 +131,25 @@ header nav ul li a {
     font-size: 20px;
   }
   .hero {
+    height: 90vh;
+  }
+  .nav-container {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 66% auto;
+        grid-template-columns: 66% auto;
+    background: unset;
+  }
+  .nav-container header {
+    background: #6700ee;
+  }
+  .nav-container header nav ul li a {
+    font-size: 14px;
+  }
+  header {
+    padding: 1.3em 2em 1.3em 4em;
+  }
+  .hero {
     display: -ms-grid;
     display: grid;
     -ms-grid-columns: 66% auto;
@@ -168,6 +168,7 @@ header nav ul li a {
   }
   .meet {
     margin: unset;
+    margin-top: 10px;
   }
   .hero-design {
     display: unset;
@@ -240,7 +241,7 @@ header nav ul li a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 0 32px;
+  padding: 32px 10px;
 }
 
 .aboutMe__main {
@@ -252,7 +253,41 @@ header nav ul li a {
 .aboutMe__main h2 {
   text-align: center;
   text-transform: uppercase;
-  margin-bottom: 20px;
+  position: relative;
+  width: 130px;
+  margin: auto;
+  margin-bottom: 30px;
+  display: block;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  cursor: default;
+}
+
+.aboutMe__main h2::after {
+  content: "";
+  width: 100%;
+  height: 6px;
+  background: #000;
+  border-radius: 3px;
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  -webkit-transform-origin: 0 0;
+          transform-origin: 0 0;
+  -webkit-transform: scaleX(0);
+          transform: scaleX(0);
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.aboutMe__main h2:hover {
+  color: #6e00ff;
+}
+
+.aboutMe__main h2:hover::after {
+  background: #6e00ff;
+  -webkit-transform: scaleX(1);
+          transform: scaleX(1);
 }
 
 .aboutMe__display {
@@ -307,6 +342,35 @@ header nav ul li a {
   }
 }
 
+.social {
+  display: block;
+  margin: 20px 0 0 0;
+}
+
+.social ul {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.social ul i {
+  color: #000;
+  font-size: 24px;
+}
+
+.social ul li:not(:last-child) {
+  margin-right: 20px;
+}
+
+@media only screen and (max-width: 1000px) {
+  .social ul {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
 .downloadCv {
   display: inline-block;
   background: #fff;
@@ -337,17 +401,53 @@ header nav ul li a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  padding: 0 10px;
 }
 
 .skills__main {
   width: 100%;
   max-width: 1000px;
-  padding: 100px 0;
+  padding: 70px 0;
 }
 
 .skills__main h2 {
   text-align: center;
   text-transform: uppercase;
+  position: relative;
+  width: 80px;
+  margin: auto;
+  margin-bottom: 30px;
+  display: block;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  cursor: default;
+}
+
+.skills__main h2::after {
+  content: "";
+  width: 100%;
+  height: 6px;
+  background: #000;
+  border-radius: 3px;
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  -webkit-transform-origin: 0 0;
+          transform-origin: 0 0;
+  -webkit-transform: scaleX(0);
+          transform: scaleX(0);
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.skills__main h2:hover {
+  color: #6e00ff;
+}
+
+.skills__main h2:hover::after {
+  background: #6e00ff;
+  -webkit-transform: scaleX(1);
+          transform: scaleX(1);
 }
 
 .skills__display {
@@ -413,6 +513,7 @@ header nav ul li a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  padding: 0 10px;
 }
 
 .work__main {
@@ -424,7 +525,41 @@ header nav ul li a {
 .work__main h2 {
   text-align: center;
   text-transform: uppercase;
-  margin-bottom: 20px;
+  position: relative;
+  width: 80px;
+  margin: auto;
+  margin-bottom: 40px;
+  display: block;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  cursor: default;
+}
+
+.work__main h2::after {
+  content: "";
+  width: 100%;
+  height: 6px;
+  background: #000;
+  border-radius: 3px;
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  -webkit-transform-origin: 0 0;
+          transform-origin: 0 0;
+  -webkit-transform: scaleX(0);
+          transform: scaleX(0);
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.work__main h2:hover {
+  color: #6e00ff;
+}
+
+.work__main h2:hover::after {
+  background: #6e00ff;
+  -webkit-transform: scaleX(1);
+          transform: scaleX(1);
 }
 
 .work__display {
@@ -553,5 +688,124 @@ header nav ul li a {
 
 .githubwars span:last-child {
   color: #b2ffe6;
+}
+
+.hireme {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 10px;
+  background: #6e00ff;
+}
+
+.hireme__main {
+  width: 100%;
+  max-width: 1000px;
+  padding: 70px 0;
+}
+
+.hireme__main h2 {
+  text-align: center;
+  text-transform: uppercase;
+  position: relative;
+  width: 100px;
+  margin: auto;
+  margin-bottom: 30px;
+  display: block;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  color: #fff;
+  cursor: default;
+}
+
+.hireme__main h2::after {
+  content: "";
+  width: 100%;
+  height: 6px;
+  background: #fff;
+  border-radius: 3px;
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  -webkit-transform-origin: 0 0;
+          transform-origin: 0 0;
+  -webkit-transform: scaleX(0);
+          transform: scaleX(0);
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.hireme__main h2:hover::after {
+  -webkit-transform: scaleX(1);
+          transform: scaleX(1);
+}
+
+.hireme__main p {
+  text-align: center;
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+.contactLinks {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.contactLinks__list {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.contactLinks__list li a {
+  color: #fff;
+}
+
+.contactLinks__list li a i {
+  font-size: 24px;
+}
+
+.contactLinks__list li:not(:last-child) {
+  margin-right: 20px;
+}
+
+.caption {
+  font-weight: 300;
+  font-size: 18px;
+}
+
+.email {
+  font-weight: 300;
+}
+
+.email a {
+  color: #fff;
+}
+
+.phone {
+  font-weight: 300;
+}
+
+.phone a {
+  color: #fff;
 }
 /*# sourceMappingURL=main.css.map */

@@ -68,6 +68,26 @@ header {
 }
 
 @media screen and (min-width: 1050px) {
+  .social-header {
+    padding: 1.3em 4em 1.3em 0;
+  }
+
+  .social-header {
+    display: block;
+
+    ul {
+      display: flex;
+      justify-content: space-between;
+      width: 7em;
+      float: right;
+
+      i {
+        color: #000;
+        font-size: 20px;
+      }
+    }
+  }
+
   .hero {
     height: 90vh;
   }
@@ -95,26 +115,6 @@ header {
     padding: 1.3em 2em 1.3em 4em;
   }
 
-  .social-header {
-    padding: 1.3em 4em 1.3em 0;
-  }
-
-  .social-header {
-    display: block;
-
-    ul {
-      display: flex;
-      justify-content: space-between;
-      width: 7em;
-      float: right;
-
-      i {
-        color: #000;
-        font-size: 20px;
-      }
-    }
-  }
-
   .hero {
     display: grid;
     grid-template-columns: 66% auto;
@@ -135,6 +135,7 @@ header {
 
   .meet {
     margin: unset;
+    margin-top: 10px;
   }
 
   .hero-design {

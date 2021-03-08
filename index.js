@@ -38,16 +38,15 @@ gsap.from(".square-anim", {
   ease: Back.easeOut.config(1.7),
 });
 
-gsap.from(".stagger2", {
+gsap.from(".skills__display-container", {
   scrollTrigger: {
     trigger: ".skills__display-container",
     toggleActions: "restart none none none",
   },
   opacity: 0,
-  x: 100,
-  stagger: 0.2,
+  x: 400,
   ease: Power4.easeOut,
-  duration: 2,
+  duration: 1,
 });
 
 gsap.from(".aboutMe__display-image", {
@@ -71,3 +70,30 @@ gsap.from(".aboutMe__display-description", {
   ease: Power4.easeOut,
   duration: 1,
 });
+
+gsap.from(".work__card", {
+  scrollTrigger: {
+    trigger: ".work__card",
+    toggleActions: "restart none none none",
+  },
+  opacity: 0,
+  y: 200,
+  ease: Power4.easeOut,
+  duration: 1,
+});
+
+gsap.from(
+  ".stagger3",
+  {
+    scrollTrigger: {
+      trigger: ".hireme",
+      toggleActions: "restart none none none",
+    },
+    opacity: 0,
+    y: -50,
+    stagger: 0.2,
+    ease: Power4.easeOut,
+    duration: 2,
+  },
+  "-=1.5"
+);
